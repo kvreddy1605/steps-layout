@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VerifyTrade Component Test SnapShot Test 1`] = `
+<div
+  className="verifyTrade"
+>
+  <div
+    className="verifyTrade__account-details"
+  >
+    <div />
+    <div />
+  </div>
+  <div
+    className="verifyTrade__labels"
+  >
+    <div
+      className="label"
+      key="0"
+    >
+      Description
+    </div>
+    <div
+      className="label"
+      key="1"
+    >
+      Ticker
+    </div>
+    <div
+      className="label"
+      key="2"
+    >
+      Firm/Branch
+    </div>
+    <div
+      className="label"
+      key="3"
+    >
+      Trade Date
+    </div>
+    <div
+      className="label"
+      key="4"
+    >
+      Trade Type
+    </div>
+    <div
+      className="label"
+      key="5"
+    >
+      Account Type
+    </div>
+    <div
+      className="label"
+      key="6"
+    >
+      Trade Amount
+    </div>
+    <div
+      className="label"
+      key="7"
+    >
+      Currrency
+    </div>
+    <div
+      className="label"
+      key="8"
+    >
+      PLID
+    </div>
+  </div>
+  <div
+    className="verifyTrade__fund-details"
+  />
+</div>
+`;

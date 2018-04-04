@@ -1,0 +1,110 @@
+.steps-layout{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  &__progress {
+    width:100%;
+    // max-width: 1000px;
+    list-style-type: none;
+    display: flex;
+
+    li {
+      position: relative;
+      text-align: center; 
+
+      &::after{
+        content: '';
+        position: absolute;
+        width:100%;
+        height: 22px;
+        background: #ddd;
+        top: 0px;
+        z-index: -1;
+      }
+      
+      @media (min-width: 768px) {
+        &::after{
+          left: -50%;
+        }
+        &::before {
+          content: "1";
+          width: 20px;
+          height: 20px;
+          border: 1px solid black;
+          display: block;
+          margin: 0 auto 10px auto;
+          border-radius: 50%;
+          background: #ddd;
+          color: #ddd;
+          text-align: center;
+          font-weight: bold;
+        }
+        &:first-child::after{
+          content: none;
+        }
+        &.progress-doing::after{
+          background: #316BB6;
+        }
+        &.progress-done::after{
+          background: #316BB6;
+        }
+        &.progress-doing::before{
+          border-color: #316BB6;
+          background: white;
+          color: white;
+        }
+        &.progress-done::before{
+          border-color: white;
+          background: #316BB6;
+          color: #316BB6;
+        }
+    
+      }
+
+      @media (max-width: 768px) { 
+
+        &::after{
+          height: 3px;
+          top: 0px;
+          left: 0px;
+        }
+
+        &::before {
+          content: ">";
+          position: absolute;
+          left: 0%
+        }
+        &:first-child::before{
+          content: none;
+        }
+        &.progress-doing::after{
+          height: 10px;
+          top: -4px;
+          background: #666;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .steps-layout__progress {
+      padding:0px;
+    }
+  }
+  @media (max-width: 768px) {
+    .steps-layout__progress {
+      font-size: 14px;
+      padding: 10px 50px;
+
+      li {
+        padding: 10px;
+      }
+    }
+  }
+
+  &__component {
+    width: 100%;
+    text-align: center;
+  }
+}

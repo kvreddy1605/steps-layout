@@ -1,0 +1,56 @@
+.verifyTrade{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+
+    &__account-details{
+        width: 100%;
+        padding-top: 15px;
+        font-size: 20px;
+    }
+
+    &__labels{
+        display: flex;
+        border-bottom: 1px solid black;
+        color: #B9B9B9;
+        padding:15px 0px; 
+        font-size: 14px;
+
+        .label:first-child{
+            width: 20%;
+        }
+        .label{
+            width: 10%;
+        }
+    }
+
+    &__fund-details{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+
+        .fund{
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid black; 
+        
+            &__row1{
+                display: flex;
+                width: 100%;
+                border-bottom: 1px solid #E1E1E1;
+                padding: 15px 0px;
+
+                div:first-child{
+                    width: 20%;
+                }
+                div{
+                    width: 10%;
+                }
+            }
+            
+            &__row2{
+                padding: 5px 0px 15px 0px; 
+            }
+        }
+    }
+}

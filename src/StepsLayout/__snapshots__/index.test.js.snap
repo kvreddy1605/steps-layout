@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepsLayout Component Test SnapShot Test 1`] = `
+<div
+  className="steps-layout"
+>
+  <ol
+    className="steps-layout__progress"
+  >
+    <li
+      className="progress-doing"
+      key="0"
+      style={
+        Object {
+          "width": "100.00%",
+        }
+      }
+      value={0}
+    >
+      hello
+    </li>
+  </ol>
+  <div
+    className="steps-layout__component"
+  >
+    <p
+      jumpToComponent={[Function]}
+      moveToNextComponent={[Function]}
+      moveToPreviousComponent={[Function]}
+    >
+      hello
+    </p>
+  </div>
+</div>
+`;
