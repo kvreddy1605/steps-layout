@@ -9,10 +9,8 @@ export default class MyComponent1 extends Component {
         
     }
     handleClick(){
-        setTimeout(()=>{
-            //Perform Client Side or Server Side Validation
-                this.props.moveToNextComponent()
-            }, 2000)
+        this.props.moveToNextComponent()
+           
     }
     componentDidMount() { }
 
